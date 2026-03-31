@@ -26,7 +26,7 @@ export const SocialProof: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         {testimonials.map((testimonial, i) => (
           <motion.div
-            key={testimonial.name}
+            key={testimonial.author}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -35,15 +35,15 @@ export const SocialProof: React.FC = () => {
           >
             <div className="flex items-center gap-6 mb-10">
               <div className="w-16 h-16 rounded-full overflow-hidden border border-white/[0.1] group-hover:border-primary-container transition-all">
-                <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0" />
+                <img src={testimonial.image} alt={testimonial.author} className="w-full h-full object-cover grayscale group-hover:grayscale-0" />
               </div>
               <div className="flex-1">
-                <h4 className="text-xl font-black tracking-[-0.03em] font-headline">{testimonial.name}</h4>
+                <h4 className="text-xl font-black tracking-[-0.03em] font-headline">{testimonial.author}</h4>
                 <div className="text-[0.6rem] font-mono uppercase tracking-[0.2em] text-primary-container/60">{testimonial.role}</div>
               </div>
             </div>
             <p className="text-on-surface-variant font-body text-xl font-light leading-relaxed group-hover:text-on-surface transition-colors">
-              "{testimonial.content}"
+              "{testimonial.quote}"
             </p>
             
             {/* Signature Accent */}

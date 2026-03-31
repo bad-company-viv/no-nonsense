@@ -50,7 +50,7 @@ export const CTASection: React.FC = () => {
           className="flex flex-col md:flex-row items-center justify-center gap-10"
         >
           <motion.button 
-            whileHover={{ scale: 1.05, shadow: "0 0 100px rgba(48,124,255,0.4)" }}
+            whileHover={{ scale: 1.05, boxShadow: "0 0 100px rgba(48,124,255,0.4)" }}
             whileTap={{ scale: 0.98 }}
             className="bg-primary-container text-on-primary-container px-16 py-10 rounded-[2.5rem] font-headline font-black text-3xl tracking-[-0.04em] flex items-center gap-6 shadow-2xl transition-all duration-700"
           >
