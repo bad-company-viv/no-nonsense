@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>No Nonsense Marketing | Editorial Authority</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#76331b",
+              "on-primary": "#5d1900",
+              "outline": "#a98a80",
+              "error-container": "#93000a",
+              "surface-tint": "#ffb59d",
+              "on-secondary-fixed": "#390c00",
+              "surface-container-lowest": "#0e0e0e",
+              "on-primary-fixed": "#390c00",
+              "tertiary": "#59d5fb",
+              "secondary": "#ffb59d",
+              "primary-container": "#ff6b35",
+              "on-surface": "#e5e2e1",
+              "background": "#131313",
+              "tertiary-fixed-dim": "#59d5fb",
+              "on-error-container": "#ffdad6",
+              "on-secondary-container": "#fb9d7d",
+              "error": "#ffb4ab",
+              "inverse-surface": "#e5e2e1",
+              "on-surface-variant": "#e1bfb5",
+              "on-tertiary-fixed": "#001f28",
+              "on-error": "#690005",
+              "surface-dim": "#131313",
+              "surface-container": "#201f1f",
+              "on-secondary": "#581d07",
+              "primary-fixed-dim": "#ffb59d",
+              "tertiary-fixed": "#b5ebff",
+              "outline-variant": "#594139",
+              "surface-container-low": "#1c1b1b",
+              "on-tertiary-container": "#003744",
+              "on-primary-fixed-variant": "#832600",
+              "secondary-fixed": "#ffdbd0",
+              "primary-fixed": "#ffdbd0",
+              "on-secondary-fixed-variant": "#76331b",
+              "inverse-primary": "#ab3500",
+              "tertiary-container": "#00a7cb",
+              "surface-variant": "#353534",
+              "primary": "#ffb59d",
+              "on-background": "#e5e2e1",
+              "secondary-fixed-dim": "#ffb59d",
+              "on-tertiary-fixed-variant": "#004e60",
+              "inverse-on-surface": "#313030",
+              "on-tertiary": "#003543",
+              "on-primary-container": "#5f1900",
+              "surface-bright": "#3a3939",
+              "surface-container-highest": "#353534",
+              "surface": "#131313",
+              "surface-container-high": "#2a2a2a"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #131313; color: #E8E8E8; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Fixed Header) -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#E8E8E8]">No Nonsense Marketing</div>
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-[#FF6B35] font-bold text-[1.15rem] tracking-tight Inter" href="#">Process</a>
+<a class="text-[#ABABAB] hover:text-[#FF6B35] transition-colors duration-200 text-[1.15rem] tracking-tight Inter" href="#">Results</a>
+<a class="text-[#ABABAB] hover:text-[#FF6B35] transition-colors duration-200 text-[1.15rem] tracking-tight Inter" href="#">FAQ</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 font-bold transition-all scale-95 active:duration-100 hover:bg-primary-fixed-dim">Join Free Webinar</button>
+</nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="pt-40 pb-24 px-8 max-w-7xl mx-auto min-h-screen flex flex-col justify-center">
+<div class="max-w-4xl">
+<h1 class="text-5xl md:text-7xl font-bold leading-[1.15] tracking-tight mb-8">
+                    Most marketing webinars are just sales funnels in disguise. <span class="text-primary-container">This one isn't.</span>
+</h1>
+<p class="text-xl md:text-2xl text-[#ABABAB] leading-relaxed mb-12 max-w-3xl">
+                    We're giving you real, actionable marketing steps. Free. No pitch at the end. No subscription after.
+                </p>
+<!-- Registration Form Container -->
+<div class="bg-surface-container-low p-8 md:p-12 border-l-4 border-primary-container mb-8">
+<form class="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-[#ABABAB] mb-2">First Name</label>
+<input class="w-full bg-[#1A1A1A] border border-[#333333] focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 outline-none transition-all" placeholder="Enter your name" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-[#ABABAB] mb-2">Work Email</label>
+<input class="w-full bg-[#1A1A1A] border border-[#333333] focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 outline-none transition-all" placeholder="email@company.com" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-[#ABABAB] mb-2">WhatsApp (Optional)</label>
+<input class="w-full bg-[#1A1A1A] border border-[#333333] focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 outline-none transition-all" placeholder="+1 ..." type="tel"/>
+</div>
+<div class="md:col-span-3 mt-4">
+<button class="w-full md:w-auto bg-primary-container text-on-primary-container px-12 py-5 text-lg font-bold hover:bg-primary-fixed-dim transition-all flex items-center justify-center gap-3">
+                                Register for the Free Webinar
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<div class="flex flex-wrap gap-8 text-sm font-bold text-[#ABABAB] tracking-widest uppercase">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container rounded-full"></span> No credit card</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container rounded-full"></span> No sales pitch</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container rounded-full"></span> Unsubscribe anytime</span>
+</div>
+</div>
+</section>
+<!-- The Industry Problem -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-20 text-center">Here's how the agency trap works <span class="text-[#ABABAB] block md:inline">(and why we won't do it)</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="space-y-6">
+<div class="text-primary-container text-6xl font-bold opacity-20">01</div>
+<h3 class="text-2xl font-bold">They promise</h3>
+<p class="text-[#ABABAB] leading-relaxed">Vague guarantees of "virality" and "exponential growth" without showing the actual engine under the hood. They sell the destination, never the map.</p>
+</div>
+<div class="space-y-6">
+<div class="text-primary-container text-6xl font-bold opacity-20">02</div>
+<h3 class="text-2xl font-bold">They charge upfront</h3>
+<p class="text-[#ABABAB] leading-relaxed">Hefty retainer fees before a single pixel is moved or a single lead is generated. You take all the financial risk; they take the profit.</p>
+</div>
+<div class="space-y-6">
+<div class="text-primary-container text-6xl font-bold opacity-20">03</div>
+<h3 class="text-2xl font-bold">You end up empty</h3>
+<p class="text-[#ABABAB] leading-relaxed">Generic reports and "brand awareness" metrics that don't pay the bills. When the contract ends, you're left with no internal systems.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Anti-Agency Model -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="border-2 border-primary-container p-12 rounded-lg bg-surface-container-high hover:translate-y-[-4px] transition-transform">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6">school</span>
+<h3 class="text-2xl font-bold mb-4">No Nonsense Webinar</h3>
+<p class="text-[#ABABAB]">Pure operational strategy. We record our screens and show you exactly how we build campaigns from scratch.</p>
+</div>
+<div class="border-2 border-primary-container p-12 rounded-lg bg-surface-container-high hover:translate-y-[-4px] transition-transform">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6">block</span>
+<h3 class="text-2xl font-bold mb-4">No Selling</h3>
+<p class="text-[#ABABAB]">There is no 15-minute pitch at the end. We don't ask for your credit card. We don't have a "limited time offer."</p>
+</div>
+<div class="border-2 border-primary-container p-12 rounded-lg bg-surface-container-high hover:translate-y-[-4px] transition-transform">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6">visibility_off</span>
+<h3 class="text-2xl font-bold mb-4">No Subscription</h3>
+<p class="text-[#ABABAB]">Access the training once and keep your notes. We won't trap you in a recurring payment cycle for "premium" content.</p>
+</div>
+<div class="border-2 border-primary-container p-12 rounded-lg bg-surface-container-high hover:translate-y-[-4px] transition-transform">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6">verified</span>
+<h3 class="text-2xl font-bold mb-4">Only Value</h3>
+<p class="text-[#ABABAB]">If the 60 minutes you spend with us doesn't give you at least three actionable steps, we've failed our mission.</p>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-32 px-8 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
+<div class="flex-1 space-y-4">
+<div class="text-sm font-bold text-primary-container tracking-[0.2em] uppercase">Phase 01</div>
+<h3 class="text-4xl font-bold">Attend the webinar (free)</h3>
+<p class="text-[#ABABAB] text-lg">Watch our live implementation of a high-conversion marketing bridge.</p>
+</div>
+<div class="flex-1 space-y-4">
+<div class="text-sm font-bold text-primary-container tracking-[0.2em] uppercase">Phase 02</div>
+<h3 class="text-4xl font-bold">Try it yourself</h3>
+<p class="text-[#ABABAB] text-lg">Take the blueprints we provide and deploy them in your own business immediately.</p>
+</div>
+<div class="flex-1 space-y-4 opacity-70">
+<div class="text-sm font-bold text-[#ABABAB] tracking-[0.2em] uppercase">Phase 03</div>
+<h3 class="text-2xl font-bold">Hire us (optional)</h3>
+<p class="text-[#ABABAB] text-base">If you're too busy to do it yourself, you can book our team. Or don't. Both are fine.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- What You'll Learn -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="max-w-[700px] mx-auto">
+<h2 class="text-3xl font-bold mb-16 text-center italic">"Exactly what is inside?"</h2>
+<ul class="space-y-8">
+<li class="flex items-start gap-6">
+<span class="w-3 h-3 bg-primary-container mt-2 flex-shrink-0"></span>
+<p class="text-xl leading-relaxed">The 3-stage psychology of a customer who actually pays (vs. the one who just browses).</p>
+</li>
+<li class="flex items-start gap-6">
+<span class="w-3 h-3 bg-primary-container mt-2 flex-shrink-0"></span>
+<p class="text-xl leading-relaxed">How to write copy that sounds like a human being, not a marketing robot from 2012.</p>
+</li>
+<li class="flex items-start gap-6">
+<span class="w-3 h-3 bg-primary-container mt-2 flex-shrink-0"></span>
+<p class="text-xl leading-relaxed">Setting up an automated follow-up system that adds value instead of annoying people.</p>
+</li>
+<li class="flex items-start gap-6">
+<span class="w-3 h-3 bg-primary-container mt-2 flex-shrink-0"></span>
+<p class="text-xl leading-relaxed">The "Anti-Pitch" technique: How to get clients to ask *you* how to work together.</p>
+</li>
+<li class="flex items-start gap-6">
+<span class="w-3 h-3 bg-primary-container mt-2 flex-shrink-0"></span>
+<p class="text-xl leading-relaxed">Which metrics actually matter (ROI) and which are vanity (Likes/Impressions).</p>
+</li>
+<li class="flex items-start gap-6">
+<span class="w-3 h-3 bg-primary-container mt-2 flex-shrink-0"></span>
+<p class="text-xl leading-relaxed">A live walk-through of our current most successful campaign structure.</p>
+</li>
+</ul>
+</div>
+</section>
+<!-- Social Proof -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 border border-[#1F1F1F] bg-background">
+<p class="text-[#ABABAB] italic mb-8">"Refreshing. No hype, just real numbers and real workflows. I implemented the email sequence the next day."</p>
+<div class="font-bold text-primary-container">Rahul S.</div>
+<div class="text-xs uppercase tracking-tighter text-[#594139]">Founder, TechFlow</div>
+</div>
+<div class="p-8 border border-[#1F1F1F] bg-background">
+<p class="text-[#ABABAB] italic mb-8">"I've attended dozens of these. This is the first time I didn't feel like I was being tricked into a high-ticket program."</p>
+<div class="font-bold text-primary-container">Priya M.</div>
+<div class="text-xs uppercase tracking-tighter text-[#594139]">E-commerce Director</div>
+</div>
+<div class="p-8 border border-[#1F1F1F] bg-background">
+<p class="text-[#ABABAB] italic mb-8">"The live teardowns alone were worth the hour. Extremely practical advice for small marketing teams."</p>
+<div class="font-bold text-primary-container">Amit P.</div>
+<div class="text-xs uppercase tracking-tighter text-[#594139]">Marketing Lead</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-32 px-8 max-w-4xl mx-auto">
+<h2 class="text-4xl font-bold mb-16 text-center">Questions you're probably already thinking</h2>
+<div class="space-y-12">
+<div>
+<h4 class="text-lg font-bold mb-3">Is this really free? What's the catch?</h4>
+<p class="text-[#ABABAB] leading-relaxed">Yes. The "catch" is that we want to demonstrate our expertise. If you learn from us and succeed, you might hire us later. If not, you still have the knowledge. No strings.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-3">Who is this webinar for?</h4>
+<p class="text-[#ABABAB] leading-relaxed">Business owners, marketing managers, and entrepreneurs who are tired of agency fluff and want direct, tactical implementation steps.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-3">Will there be a recording?</h4>
+<p class="text-[#ABABAB] leading-relaxed">Yes, all registered participants will receive a link to the recording 24 hours after the live session concludes.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-3">Do I need a big budget to use these steps?</h4>
+<p class="text-[#ABABAB] leading-relaxed">No. We focus on high-leverage activities that work whether you're spending $500 or $50,000 on ads. The principles are universal.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-3">How long is the session?</h4>
+<p class="text-[#ABABAB] leading-relaxed">Exactly 60 minutes. 45 minutes of training and 15 minutes of live Q&amp;A. We respect your time.</p>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-48 px-8 bg-surface-container-high text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-5xl md:text-6xl font-bold mb-8">You've got nothing to lose. <br/><span class="text-primary-container">We mean that literally.</span></h2>
+<p class="text-xl text-[#ABABAB] mb-12">Stop wasting time on "guru" courses and starts building real marketing assets today.</p>
+<button class="bg-primary-container text-on-primary-container px-16 py-6 text-xl font-bold hover:bg-primary-fixed-dim transition-all inline-flex items-center gap-4">
+                    Register for the Free Webinar
+                    <span class="material-symbols-outlined">bolt</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 border-t border-[#594139]/15 bg-[#131313]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<div class="text-lg font-bold text-[#E8E8E8]">No Nonsense Marketing</div>
+<div class="flex gap-8 text-sm font-normal text-[#ABABAB]">
+<a class="hover:text-[#E8E8E8] transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-[#E8E8E8] transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-[#E8E8E8] transition-colors" href="#">Contact</a>
+</div>
+<div class="text-sm font-normal text-[#ABABAB]">
+                © 2024 Editorial Authority. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

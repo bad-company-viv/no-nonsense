@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #080808;
+  --color-surface-container-lowest: #080808;
+  --color-surface-container-low: #0C0C0C;
+  --color-surface-container: #111111;
+  --color-surface-container-high: #181818;
+  --color-surface-container-highest: #202020;
+  
+  --color-primary-container: #307CFF;
+  --color-on-primary-container: #ffffff;
+  --color-on-surface: #FFFFFF;
+  --color-on-surface-variant: #999999;
+  --color-outline-variant: #222222;
+  --color-slate-indigo: #2A2A35;
+
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --animate-snap: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  :root {
+    --accent: #307CFF;
+    --background: #080808;
+  }
+
+  * {
+    @apply selection:bg-primary-container selection:text-on-primary-container tracking-[-0.01em];
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-on-surface antialiased overflow-x-hidden;
+    /* Noise Texture Overlay */
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(48, 124, 255, 0.05) 0%, transparent 50%),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-[-0.04em] leading-[0.95];
+  }
+
+  i, em {
+    @apply font-serif italic font-normal;
+  }
+
+  /* Minimalist Technical Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-outline-variant hover:bg-primary-container transition-colors;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-background/80 backdrop-blur-3xl border-b border-white/[0.05];
+  }
+
+  .grid-bg {
+    background-image: radial-gradient(circle, #307CFF 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.02;
+  }
+
+  .studio-border {
+    @apply border border-white/[0.06] rounded-[3rem] transition-all duration-700 hover:border-white/[0.12];
+  }
+}
